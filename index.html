@@ -25,13 +25,13 @@
   <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
     <!-- Heart -->
     <div class="w-[100px] flex items-center justify-center space-x-4 p-3 bg-[#41ff6b1a] rounded-xl">
-      <span>0</span>
+      <span id="heartCounter">0</span>
       <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
     </div>
 
     <!-- Coin -->
     <div class="w-[100px] flex items-center justify-center space-x-4 p-3 bg-[#41ff6b1a] rounded-xl">
-      <span>100</span>
+      <span id="coin-holder">100</span>
       <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
     </div>
 
@@ -68,12 +68,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
+          <h2 class="font-bold text-lg title">National Emergency Number</h2>
           <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
+          <h1 class="text-2xl font-bold mt-2 code">999</h1>
           <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -81,7 +81,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -90,12 +90,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">Police Helpline Number</h2>
+          <p class="text-sm text-gray-500">Police Service</p>
+          <h1 class="text-2xl font-bold mt-2 code">999</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Police</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -103,7 +103,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -111,12 +111,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">National Fire Service</h2>
+          <p class="text-sm text-gray-500">Fire Service</p>
+          <h1 class="text-2xl font-bold mt-2 code">999</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Fire</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -124,7 +124,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -132,12 +132,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">Ambulence Service Bangladesh</h2>
+          <p class="text-sm text-gray-500">Emergency Ambulence Service</p>
+          <h1 class="text-2xl font-bold mt-2 code">8888</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Ambulence</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -145,7 +145,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -153,12 +153,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">Women And Chilhelpline</h2>
+          <p class="text-sm text-gray-500">National Women And child Secure</p>
+          <h1 class="text-2xl font-bold mt-2 code">0099</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Women Help</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -166,7 +166,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -174,12 +174,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">Anti Corruption Helpline</h2>
+          <p class="text-sm text-gray-500">National Corruption Help</p>
+          <h1 class="text-2xl font-bold mt-2 code">1060</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Corruption</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -187,7 +187,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -195,12 +195,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">Electricity Help</h2>
+          <p class="text-sm text-gray-500">National Electricity</p>
+          <h1 class="text-2xl font-bold mt-2 code">8899</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Electricity</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -208,7 +208,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -216,12 +216,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">Brack Helpline</h2>
+          <p class="text-sm text-gray-500">Ngo Brack World</p>
+          <h1 class="text-2xl font-bold mt-2 code">2323</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Brack</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -229,7 +229,7 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
 
@@ -237,12 +237,12 @@
       <div class="flex items-start justify-between">
         <div>
           <img class="w-8 h-8 mb-2" src="./assets/national.png" alt="">
-          <h2 class="font-bold text-lg">National Emergency Number</h2>
-          <p class="text-sm text-gray-500">National Emergency</p>
-          <h1 class="text-2xl font-bold mt-2">999</h1>
-          <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
+          <h2 class="font-bold text-lg title">National Railway Helpline</h2>
+          <p class="text-sm text-gray-500">National Railway Help</p>
+          <h1 class="text-2xl font-bold mt-2 code">4040</h1>
+          <span class="text-xs bg-gray-100 px-2 py-1 rounded">Railway</span>
         </div>
-        <button>
+        <button class="heart">
           <img class="w-5 h-5" src="./assets/heart.png" alt="favorite">
         </button>
       </div>
@@ -250,10 +250,10 @@
       <!-- Actions -->
       <div class="flex justify-between mt-4">
         <button class="border px-4 py-2 rounded-lg text-sm">📋 Copy</button>
-        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm">📞 Call</button>
+        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">📞 Call</button>
       </div>
     </div>
-    
+
 
     <!-- Repeat for other cards ... -->
   </div>
@@ -262,18 +262,12 @@
   <div class="bg-white shadow rounded-xl p-4 flex flex-col">
     <div class="flex justify-between items-center mb-4">
       <h2 class="font-bold">Call History</h2>
-      <button class="bg-green-600 text-white px-3 py-1 rounded-lg text-sm">Clear</button>
+      <button id="all-clear" class="bg-green-600 text-white px-3 py-1 rounded-lg text-sm">Clear</button>
     </div>
 
     <div class="space-y-3 overflow-y-auto max-h-[500px]">
       <!-- Single history item -->
-      <div class="flex justify-between items-center border-b pb-2">
-        <div>
-          <p class="font-semibold text-sm">Fire Service Number</p>
-          <p class="text-xs text-gray-500">999</p>
-        </div>
-        <span class="text-xs text-gray-400">11:36:58 AM</span>
-      </div>
+      
       <!-- Repeat dynamically -->
     </div>
   </div>
