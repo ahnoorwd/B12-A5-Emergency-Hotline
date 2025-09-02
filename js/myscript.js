@@ -13,6 +13,38 @@ for (let heart of allheart) {
   });
 }
 
+ 
+// Get all copy buttons
+const copyButtons = document.getElementsByClassName("copy-btn");
+
+// Get the counter span
+const copyCounter = document.querySelector("h1 span");
+
+for (let copy of copyButtons) {
+  copy.addEventListener("click", function () {
+    // 1. Find the card where this button belongs
+    const card = copy.closest(".bg-white");
+
+    // 2. Get the code number inside that card
+    const codeElement = card.querySelector(".code");
+    const codeText = codeElement.textContent.trim();
+
+    // 3. Copy the code to clipboard
+    navigator.clipboard.writeText(codeText).then(() => {
+      console.log("Copied:", codeText);
+    }).catch(err => {
+      console.error("Failed to copy:", err);
+    });
+
+    // 4. Increase the counter
+    let currentCount = parseInt(copyCounter.textContent);
+    currentCount++;
+    copyCounter.textContent = currentCount;
+  });
+}
+
+
+
 
 // Get coin holder span
 const coinHolder = document.getElementById("coin-holder");
