@@ -2,31 +2,30 @@
 
 ### My Readme File...
 
-## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 ### Ans-01::
 
->>getElementById("id") → Selects a single element by its unique id. Always returns one element.
+getElementById("id") → Selects a single element by its unique id. Always returns one element.
 
->>getElementsByClassName("class") → Selects all elements with a given class. Returns an HTMLCollection (live list, not an array).
+getElementsByClassName("class") → Selects all elements with a given class. Returns an HTMLCollection (live list, not an array).
 
->>querySelector("selector") → Returns the first element that matches a CSS selector (e.g. .class, #id, div > p).
+querySelector("selector") → Returns the first element that matches a CSS selector (e.g. .class, #id, div > p).
 
->>querySelectorAll("selector") → Returns all elements matching the CSS selector as a NodeList (static list, array-like).
+querySelectorAll("selector") → Returns all elements matching the CSS selector as a NodeList (static list, array-like).
 
->>querySelector is the most flexible since it supports full CSS selectors.
+querySelector is the most flexible since it supports full CSS selectors.
 ---
-## 2. How do you create and insert a new element into the DOM**?
+## 2. How do you create and insert a new element into the DOM?
 
 ### Ans-02::
 
 You can create a new element using document.createElement() and then insert it into the DOM using methods like appendChild(), prepend(), before(), or after().
 
-An example code 
+Example
 const newDiv = document.createElement("div");  
 newDiv.textContent = "Hello World!";  
-document.body.appendChild(newDiv);  
----
+document.body.appendChild(newDiv);
 
 ## 3. What is Event Bubbling and how does it work?
 
@@ -34,8 +33,8 @@ document.body.appendChild(newDiv);
 
 Event Bubbling is the process where an event starts from the target element and propagates upwards through its ancestors (parent → grandparent → etc.).
 
-Example: If you click a button inside a <div>, the click event fires on the button first,then bubbles up to the <div>,then to the <body>,and so on.
----
+Example: If you click a button inside a <div>, the click event fires on the button first, then bubbles up to the <div>, then to the <body>, and so on.
+
 ## 4. What is Event Delegation in JavaScript? Why is it useful?
 
 ### Ans-04::

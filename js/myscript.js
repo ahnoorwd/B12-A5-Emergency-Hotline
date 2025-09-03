@@ -83,7 +83,7 @@ callButtons.forEach((btn) => {
     const dateTime = now.toLocaleString();
 
     const historyItem = document.createElement("div");
-    historyItem.className = "flex justify-between items-center  bg-white shadow rounded-lg p-3";
+    historyItem.className = "flex justify-between items-center  bg-gray-100 shadow rounded-lg p-3";
 
     historyItem.innerHTML = `
       <div>
@@ -102,6 +102,7 @@ callButtons.forEach((btn) => {
 
 const clearBtn = document.getElementById("all-clear");
 
-clearBtn.addEventListener("click", () => {
+clearBtn.addEventListener("click", function () {
   historyContainer.innerHTML = ""; // remove all history items
 });
+
