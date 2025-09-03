@@ -5,13 +5,14 @@
 const allheart = document.getElementsByClassName("heart");
 
 for (let heart of allheart) {
-  heart.addEventListener("click", () => {
+  heart.addEventListener("click", function () {
     const heartcount = document.getElementById('heartCounter');
-    let current = parseInt(heartcount.innerText) || 0; // get current value
-    current++; // increment
-    heartcount.innerText = current; // update display
+    let current = parseInt(heartcount.innerText) || 0; 
+    current++; 
+    heartcount.innerText = current; 
   });
 }
+
 
  
 // Get all copy buttons
@@ -22,10 +23,10 @@ const copyCounter = document.querySelector("h1 span");
 
 for (let copy of copyButtons) {
   copy.addEventListener("click", function () {
-    // 1. Find the card where this button belongs
+    // 1. Find the card where this button 
     const card = copy.closest(".bg-white");
 
-    // 2. Get the code number inside that card
+    // 2. Get the code number inside  card
     const codeElement = card.querySelector(".code");
     const codeText = codeElement.textContent.trim();
 
@@ -103,6 +104,6 @@ callButtons.forEach((btn) => {
 const clearBtn = document.getElementById("all-clear");
 
 clearBtn.addEventListener("click", function () {
-  historyContainer.innerHTML = ""; // remove all history items
+  historyContainer.innerHTML = ""; 
 });
 

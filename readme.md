@@ -14,7 +14,6 @@ querySelector("selector") → Returns the first element that matches a CSS selec
 
 querySelectorAll("selector") → Returns all elements matching the CSS selector as a NodeList (static list, array-like).
 
-querySelector is the most flexible since it supports full CSS selectors.
 ---
 ## 2. How do you create and insert a new element into the DOM?
 
